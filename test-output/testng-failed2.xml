@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="productTest.PurchaseUseEmailChro">
+        <methods>
+          <include name="purchaeProd"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- productTest.PurchaseUseEmailChro -->
+      <class name="productTest.ReOrderProduct">
+        <methods>
+          <include name="reOrderProduct"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- productTest.ReOrderProduct -->
+      <class name="productTest.ExpOrdInCSVSendToEmail">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyReviewMsg"/>
+          <include name="launchBrowser"/>
+          <include name="exportInCSV"/>
+          <include name="verifyInvoicePrinted"/>
+          <include name="verifyDisAbleAndBlankField"/>
+          <include name="verifySorting"/>
+        </methods>
+      </class> <!-- productTest.ExpOrdInCSVSendToEmail -->
+      <class name="productTest.MobTitVerAndSort">
+        <methods>
+          <include name="mobAddToCart"/>
+          <include name="mobCostVer"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- productTest.MobTitVerAndSort -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
